@@ -35,3 +35,9 @@ print(confusion_matrix(y_test, predicted_values))
 print('Overall f1-score')
 print(f1_score(y_test, predicted_values, average="macro"))
 
+#Kneighbors
+from sklearn.neighbors import KNeighborsClassifier
+neigh = KNeighborsClassifier()
+neigh.fit(X, y)
+KNeighborsClassifier()
+print(neigh.predict(X))
